@@ -1,0 +1,26 @@
+{
+  "name": "pearson-r",
+  "version": "1.0.0",
+  "description": "An implementation of Person R correlation in Node.js",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "babel-node examples/item-item.js --presets es2015,stage-3",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "keywords": [
+    "pearson-r"
+  ],
+  "author": "Stevenson Michel <thoven87@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "babel-register": "^6.18.0",
+    "mocha": "^3.1.2"
+  }
+}
