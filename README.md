@@ -1,6 +1,7 @@
 # A Recommendation engine for Node.js using Pearson coefficient
 
 [![Build Status](https://travis-ci.org/thoven78/pearson-r.svg?branch=master)](https://travis-ci.org/thoven78/pearson-r)
+
   ## It's a work in progress
 
   To get started look at examples/data.js and examples/item-item.js
