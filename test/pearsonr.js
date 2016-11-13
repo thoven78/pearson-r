@@ -16,7 +16,7 @@ describe('#pearsonR', () => {
 
 describe('#recomend', () => {
   it('should recomend movies that I have not seen', (done) => {
-    const expected = ['Doctor Strange', 'Forrest Gump', 'Finding Nemo', 'Bad Grandpa', 'The Lion King', 'Fight Club', 'Gladiator', 'Terminator 2', 'Jaws', 'Sin City']
+    const expected = ['Terminator 2', 'Men in Black', 'Doctor Strange', 'Forrest Gump', 'Full Metal Jacket', 'Finding Nemo', 'Bad Grandpa', 'Braveheart', 'The Lion King', 'Fight Club', 'Gladiator', 'Jaws', 'Sin City']
     assert.deepEqual(recomend(data, 'Stevenson').map(x => Object.keys(x)[0]), expected);
     done();
   });
