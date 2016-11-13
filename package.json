@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "babel-node examples/item-item.js --presets es2015,stage-3",
+    "start": "babel-node examples/index.js --presets es2015,stage-3",
     "test": "mocha --compilers js:babel-register"
   },
   "repository": {

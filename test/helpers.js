@@ -5,9 +5,11 @@ import {
   generateData,
   has,
   getValues,
-  getValue
+  getValue,
+  union,
+  round
 } from '../lib/helpers'
-import assert from 'assert'
+import assert from 'assert';
 
 const data = [{test: 1}, {test1: null}];
 
@@ -17,14 +19,13 @@ describe('#intersection', () => {
   });
 });
 
-describe('#intersection', () => {
+describe('#generateData', () => {
   it('should return a list with speudo random values', () => {
     assert.equal(generateData(5).length, 5);
   });
 });
 
 describe('#has', () => {
-
   it('should return a true', () => {
     assert.equal(has(data, 'test', true), true);
   });
@@ -44,9 +45,23 @@ describe('#getValues', () => {
   });
 });
 
-
 describe('#getValue', () => {
   it('should return a value for a given object', () => {
     assert.equal(getValue(data[0]), 1);
+  });
+});
+
+const a = [1, 2, 3, 4];
+const b = [3, 4, 5, 6];
+
+describe('#union', () => {
+  it('should return a | b', () => {
+    assert.deepEqual(union(a, b), new Set([1, 2, 3, 4, 5, 6]));
+  });
+});
+
+describe('#round', () => {
+  it('should round numbers from a given precision', () => {
+    assert.deepEqual(round(3.14, 1), 3.1);
   });
 });

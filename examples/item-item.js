@@ -1,5 +1,5 @@
-import recomend, { generateData, intersection, pearsonR } from '../index';
-import { data } from './data'
+import recommend, { generateData, intersection, pearsonR } from '../index';
+import { data } from './data';
 
 const correlation = () => {
   const data1 = generateData(5, 10);
@@ -14,4 +14,4 @@ const correlation = () => {
 
 console.log(correlation(), 'correlation test');
 
-console.log(recomend(data, 'Al'), 'Recommendations for Al');
+console.log(recommend(data, 'Anchal'), 'Recommendations for Al');

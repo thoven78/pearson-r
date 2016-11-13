@@ -1,9 +1,11 @@
 'use strict';
 
-import { recomend, pearsonR } from './lib/pearsonr';
+import { pearsonR, jaccardSimilarity, cosineSimilarity } from './lib/algo';
 
-import { generateData, intersection } from './lib/helpers';
+import { generateData, intersection, round } from './lib/helpers';
 
-export { pearsonR, generateData, intersection };
+import recommend from './lib/recommender';
 
-export default recomend;
+export { pearsonR, jaccardSimilarity, generateData, intersection, cosineSimilarity, round };
+
+export default recommend;
