@@ -26,7 +26,7 @@ describe('#euclideanDistance', () => {
   it('should computes the euclidean distance between two lists', (done) => {
     const a = [0, 3, 4, 5];
     const b = [7, 6, 3, -1];
-    assert.deepEqual(euclideanDistance(a, b), 9.746794344808963);
+    assert.deepEqual(euclideanDistance(a, b), 0.09305100366818048);
     done();
   });
 });
