@@ -7,7 +7,9 @@ import {
   getValues,
   getValue,
   union,
-  round
+  round,
+  zip,
+  normalize
 } from '../lib/helpers'
 import assert from 'assert';
 
@@ -63,5 +65,18 @@ describe('#union', () => {
 describe('#round', () => {
   it('should round numbers from a given precision', () => {
     assert.deepEqual(round(3.14, 1), 3.1);
+  });
+});
+
+describe('#zip', () => {
+  it('should zip two arrays', () => {
+    assert.deepEqual(zip(a, b), a.concat(b));
+  });
+});
+
+describe('#normalize', () => {
+  it('should normalize a data', () => {
+    assert.deepEqual(normalize(1, 3), [0, 0]);
+    assert.deepEqual(normalize(1, 3, 2), [2, 2]);
   });
 });

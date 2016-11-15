@@ -7,13 +7,16 @@ import recommend from '../lib/recommender';
 describe('#recommend', () => {
   it('should recomend movies that I have not seen', (done) => {
     const expected = [
-      'Doctor Strange',
-      'The Lion King',
-      'Finding Nemo',
-      'Bad Grandpa',
-      'Gladiator',
       'Fight Club',
+      'Men in Black',
+      'Doctor Strange',
+      'Full Metal Jacket',
+      'Finding Nemo',
+      'The Lion King',
+      'Bad Grandpa',
+      'Braveheart',
       'Terminator 2',
+      'Gladiator',
       'Sin City'
     ];
 

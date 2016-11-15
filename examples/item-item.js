@@ -14,4 +14,4 @@ const correlation = () => {
 
 console.log(correlation(), 'correlation test');
 
-console.log(recommend(data, 'Anchal'), 'Recommendations for Al');
+console.log(recommend(data, 'Robert'), 'Recommendations for Robert');
