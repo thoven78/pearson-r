@@ -1,4 +1,4 @@
-import recommend, { generateData, intersection, pearsonR } from '../index';
+import recommend, { generateData, intersection, pearsonR, jaccardSimilarity } from '../index';
 import { data } from './data';
 
 const correlation = () => {
@@ -14,4 +14,10 @@ const correlation = () => {
 
 console.log(correlation(), 'correlation test');
 
-console.log(recommend(data, 'Robert'), 'Recommendations for Robert');
+console.log('');
+
+console.log(recommend(data, 'Robert'), 'Recommendations for Robert', 'using default <pearson-r>');
+
+console.log('');
+
+console.log(recommend(data, 'Robert', jaccardSimilarity), 'Recommendations for Robert', 'using default <jaccardSimilarity>');
